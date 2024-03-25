@@ -33,7 +33,7 @@ with open('example.txt', 'r') as file:
     print(content)
 
 #list all files in a directory
-for file in os.listdir('/Users/romaincascio/Documents/H3Hitema/python/web_scrap'):
+for file in os.listdir('/Users/romaincascio/Documents/H3Hitema/python/web_scrap/'):
     print(file)
 
 with open('example.txt', 'r', encoding='utf-8') as file:
@@ -107,7 +107,7 @@ response = requests.get('http://httpbin.org/ip')
 
 proxy = FreeProxy(country_id=['FR']).get(); proxy
 
-proxy_list = [FreeProxy(country_id=['FR']).get() for x in range(3)]; proxy_list
+proxy_list = [FreeProxy(country_id=['FR']).get() for x in range(150)]; proxy_list
 
 proxies = {'http': proxy_list[1]} 
 response = requests.get('http://httpbin.org/ip', proxies=proxies) 
