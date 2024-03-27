@@ -1,10 +1,21 @@
+version: '3'
+
 services:
   database:
     image: mysql
     ports:
-      - 3307:3307
+      - "3307:3307"
     volumes:
       - ./database:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: root
+    restart: always
+
+  selenium_app:
+    build: .
+    depends_on:
+      - database
+    environment:
+      - DATABASE_HOST=database
+      - DATABASE_PORT=3306
     restart: always
