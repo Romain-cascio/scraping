@@ -192,9 +192,9 @@ def main():
     df_esports = pd.DataFrame(data_esports)
 
     database_url = 'mysql+pymysql://root:root@database:3307/scrap'
-    insert_dataframe_to_mysql(df, 'produits', database_url)
-    insert_dataframe_to_mysql(df_partenaires, 'partenaires', database_url)
-    insert_dataframe_to_mysql(df_esports, 'esports', database_url)
+    insert_dataframe_to_mysql(df, 'Produits', database_url)
+    insert_dataframe_to_mysql(df_partenaires, 'Partenaires', database_url)
+    insert_dataframe_to_mysql(df_esports, 'Esports', database_url)
 
     print(df_partenaires)
     print(df_esports)
