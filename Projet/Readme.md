@@ -12,7 +12,6 @@ Le fichier Dockerfile contient les instructions pour construire l'image Docker. 
 Le fichier docker-compose.yml définit les services nécessaires pour exécuter l'application. Il crée un service pour la base de données MySQL et un autre pour exécuter le script de web scraping.
 
 ```yaml
-Copy code
 version: '3'
 
 services:
