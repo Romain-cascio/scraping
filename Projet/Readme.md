@@ -32,13 +32,12 @@ services:
 ```
 
 ### Exécution du script
-Pour exécuter le script de web scraping, suivez les étapes suivantes :
+#### Pour exécuter le script de web scraping, suivez les étapes suivantes :
 
 Clonez ce référentiel sur votre machine locale.
 Assurez-vous d'être dans le répertoire contenant les fichiers Docker (Dockerfile, docker-compose.yml) et le script Python (Scrap-projet-kc.py).
-Exécutez la commande suivante pour construire l'image Docker et démarrer les conteneurs :
-bash
-Copy code
+
+**Exécutez la commande suivante pour construire l'image Docker et démarrer les conteneurs :**
 `docker-compose up --build`
 Une fois les conteneurs démarrés, le script de web scraping sera automatiquement exécuté.
 
